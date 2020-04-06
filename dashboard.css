@@ -193,3 +193,7 @@ li.sidebar-header {
     border-left: solid 4px rgb(86,156,211);
     transition: transform 300ms;
 }
+
+li.active li a.active {
+    color: #2688c3;
+}

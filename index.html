@@ -290,6 +290,11 @@
         $('li').removeClass('active');
         $(this).addClass('active')
     })
+    $('a').on('click', function(e) {
+        e.preventDefault();
+        $('a').removeClass('active');
+        $(this).addClass('active')
+    })
     </script>
     <script type="text/javascript">
         $('li').on('show.bs.collapse', function () {
@@ -297,6 +302,7 @@
         })
         $('li').on('hide.bs.collapse', function () {
           $(this).find('i.ti-angle-down').css("transform", "none");
+          $(this).removeClass('active');
         })
     </script>
 
