@@ -1,0 +1,305 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <script src="https://use.fontawesome.com/509e8b7894.js"></script>
+    <link href="themify-icons.css" rel="stylesheet">
+
+
+    <title>Dashboard Expensya</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default fixed-top flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"></a>
+      <ul class="navbar-nav px-3">
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <div class="sidebar-inner" id="accordion">
+              <ul class="sidebar-menu list-unstyled">
+                <li class="sidebar-header">
+                    entreprise
+                </li>
+                <li>
+                  <a href="#ndfSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="ti-receipt sidebar-icon-left" aria-hidden="true"></i>
+                    <span class="submenu-title" style="display: inline-block;width: 185px;">Notes de frais</span>
+                    <i class="ti-angle-down sidebar-icon-right" aria-hidden="true"></i>
+                  </a>
+                  <div class="sub-menu">
+                      <ul class="collapse list-unstyled" id="ndfSubmenu" data-parent="#accordion">
+                          <li>
+                              <a href="#">Notes</a>
+                          </li>
+                      </ul>
+                      <ul class="collapse list-unstyled" id="ndfSubmenu" data-parent="#accordion">
+                          <li>
+                              <a href="#">Frais</a>
+                          </li>
+                      </ul>
+                      <ul class="collapse list-unstyled" id="ndfSubmenu" data-parent="#accordion">
+                          <li>
+                              <a href="#">Avances</a>
+                          </li>
+                      </ul>
+                      <ul class="collapse list-unstyled" id="ndfSubmenu" data-parent="#accordion">
+                          <li>
+                              <a href="#">Ordres de mission</a>
+                          </li>
+                      </ul>
+                      <ul class="collapse list-unstyled" id="ndfSubmenu" data-parent="#accordion">
+                          <li>
+                              <a href="#">Achats</a>
+                          </li>
+                      </ul>
+                    </div>
+                </li>
+                <li>
+                  <a href="#collabSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fa fa-handshake-o sidebar-icon-left" aria-hidden="true"></i>
+                    <span class="submenu-title" style="display: inline-block;width: 185px;">Collaborateurs</span>
+                    <i class="ti-angle-down sidebar-icon-right" aria-hidden="true"></i>
+                  </a>
+                  <div class="sub-menu">
+                      <ul class="collapse list-unstyled" id="collabSubmenu" data-parent="#accordion">
+                          <li>
+                              <a href="#">Employés</a>
+                          </li>
+                      </ul>
+                      <ul class="collapse list-unstyled" id="collabSubmenu" data-parent="#accordion">
+                          <li>
+                              <a href="#">Groupes</a>
+                          </li>
+                      </ul>
+                      <ul class="collapse list-unstyled" id="collabSubmenu" data-parent="#accordion">
+                          <li>
+                              <a href="#">Accès délégués</a>
+                          </li>
+                      </ul>
+                      <ul class="collapse list-unstyled" id="collabSubmenu" data-parent="#accordion">
+                          <li>
+                              <a href="#">Invités</a>
+                          </li>
+                      </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ti-check-box sidebar-icon-left" aria-hidden="true"></i>
+                    Politiques de dépenses&nbsp;
+                  </a>
+                </li>
+                <li>
+                  <a href="#prefdebSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="ti-layout-cta-left sidebar-icon-left" aria-hidden="true"></i>
+                    <span class="submenu-title" style="display: inline-block;width: 185px;">Préférences de la dépense</span>
+                    <i class="ti-angle-down sidebar-icon-right" aria-hidden="true"></i>
+                  </a>
+                  <div class="sub-menu">
+                    <ul class="collapse list-unstyled" id="prefdebSubmenu" data-parent="#accordion">
+                        <li>
+                            <a href="#">Affaires</a>
+                        </li>
+                    </ul>
+                    <ul class="collapse list-unstyled" id="prefdebSubmenu" data-parent="#accordion">
+                        <li>
+                            <a href="#">Catégories</a>
+                        </li>
+                    </ul>
+                    <ul class="collapse list-unstyled" id="prefdebSubmenu" data-parent="#accordion">
+                        <li>
+                            <a href="#">Champs personalisés</a>
+                        </li>
+                    </ul>
+                    <ul class="collapse list-unstyled" id="prefdebSubmenu" data-parent="#accordion">
+                        <li>
+                            <a href="#">Fournisseurs</a>
+                        </li>
+                    </ul>
+                  </div>
+                  </li>
+                <li>
+                  <a href="#paieSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="ti-credit-card sidebar-icon-left" aria-hidden="true"></i>
+                    <span class="submenu-title" style="display: inline-block;width: 185px;">Paiement & versement</span>
+                    <i class="ti-angle-down sidebar-icon-right" aria-hidden="true"></i>
+                  </a>
+                  <div class="sub-menu">
+                    <ul class="collapse list-unstyled" id="paieSubmenu" data-parent="#accordion">
+                        <li>
+                            <a href="#">Moyens de paiement</a>
+                        </li>
+                    </ul>
+                    <ul class="collapse list-unstyled" id="paieSubmenu" data-parent="#accordion">
+                        <li>
+                            <a href="#">Compte bancaire</a>
+                        </li>
+                    </ul>
+                    <ul class="collapse list-unstyled" id="paieSubmenu" data-parent="#accordion">
+                        <li>
+                            <a href="#">Cartes virtuelles</a>
+                        </li>
+                    </ul>
+                  </div>
+                  </li>
+                <li>
+                  <a href="#">
+                    <i class="ti-bar-chart-alt sidebar-icon-left" aria-hidden="true"></i>
+                    Rapports intéractifs
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ti-layers-alt sidebar-icon-left" aria-hidden="true"></i>
+                    <span class="submenu-title" style="display: inline-block;width: 147px;">Imports & Exports</span><span class="badge badge-success">New</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#integSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="ti-import sidebar-icon-left" aria-hidden="true"></i>
+                    <span class="submenu-title" style="display: inline-block;width: 185px;">Intégrations</span>
+                    <i class="ti-angle-down sidebar-icon-right" aria-hidden="true"></i>
+                  </a>
+                  <div class="sub-menu">
+                  <ul class="collapse list-unstyled" id="integSubmenu" data-parent="#accordion">
+                      <li>
+                          <a href="#">Quickbooks</a>
+                      </li>
+                  </ul>
+                  <ul class="collapse list-unstyled" id="integSubmenu" data-parent="#accordion">
+                      <li>
+                          <a href="#" >Cegid</a><span class="badge badge-success">New</span>
+                      </li>
+                  </ul>
+                </div>
+                </li>
+                <li>
+                  <a href="#baremSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="ti-car sidebar-icon-left" aria-hidden="true"></i>
+                    <span class="submenu-title" style="display: inline-block;width: 185px;">Barème & véhicules</span>
+                    <i class="ti-angle-down sidebar-icon-right" aria-hidden="true"></i>
+                  </a>
+                  <div class="sub-menu">
+                  <ul class="collapse list-unstyled" id="baremSubmenu" data-parent="#accordion">
+                      <li>
+                          <a href="#">Barèmes kilométriques</a>
+                      </li>
+                  </ul>
+                  <ul class="collapse list-unstyled" id="baremSubmenu" data-parent="#accordion">
+                      <li>
+                          <a href="#">Véhicules</a>
+                      </li>
+                  </ul>
+                </div>
+                </li>
+                <li>
+                  <a href="#prefSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="ti-settings sidebar-icon-left" aria-hidden="true"></i>
+                    <span class="submenu-title" style="display: inline-block;width: 185px;">Préférences de l’entreprise</span>
+                    <i class="ti-angle-down sidebar-icon-right" aria-hidden="true"></i>
+                  </a>
+                  <div class="sub-menu">
+                  <ul class="collapse list-unstyled" id="prefSubmenu" data-parent="#accordion">
+                      <li>
+                          <a href="#">Fiche de l'entreprise</a>
+                      </li>
+                  </ul>
+                  <ul class="collapse list-unstyled" id="prefSubmenu" data-parent="#accordion">
+                      <li>
+                          <a href="#">Fonctinnalités</a>
+                      </li>
+                  </ul>
+                </div>
+                </li>
+                <li class="sidebar-header">
+                    compte
+                </li>
+                <li>
+                  <a href="#integInscri" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="ti-user sidebar-icon-left" aria-hidden="true"></i>
+                    <span class="submenu-title" style="display: inline-block;width: 185px;">Inscription & Facturation</span>
+                    <i class="ti-angle-down sidebar-icon-right" aria-hidden="true"></i>
+                  </a>
+                  <div class="sub-menu">
+                  <ul class="collapse list-unstyled" id="integInscri" data-parent="#accordion">
+                      <li>
+                          <a href="#">Abonnement</a>
+                      </li>
+                  </ul>
+                  <ul class="collapse list-unstyled" id="integInscri" data-parent="#accordion">
+                      <li>
+                          <a href="#">factures</a>
+                      </li>
+                  </ul>
+                </div>
+                </li>
+                <li>
+                  <div class="progress-wrapper">
+                    <div class="progress">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress-label">
+                      <div class="label-left">
+                        Période d'essai
+                      </div>
+                      <div class="label-right">
+                        21/30 Jours
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script type="text/javascript">
+    $('li').on('click', function(e) {
+        e.preventDefault();
+        $('li').removeClass('active');
+        $(this).addClass('active')
+    })
+    </script>
+    <script type="text/javascript">
+        $('li').on('show.bs.collapse', function () {
+          $(this).find('i.ti-angle-down').css("transform", "rotate(-180deg)");
+        })
+        $('li').on('hide.bs.collapse', function () {
+          $(this).find('i.ti-angle-down').css("transform", "none");
+        })
+    </script>
+
+
+  </body>
+</html>

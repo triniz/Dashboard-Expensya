@@ -1,0 +1,195 @@
+body {
+  font-size: 1.1rem;
+  font-family: 'Dosis', serif;
+  background-color: #e7e7e7;
+  color: #294661;
+}
+
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  min-width: 320px;
+  background-color: #FFF;
+  color: #294661;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+/*
+ * Content
+ */
+
+[role="main"] {
+  padding-top: 48px; /* Space for fixed navbar */
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+
+
+/*
+ * Expensya
+ */
+
+nav.navbar.navbar-default {
+    background: #2688c3 ;
+    border-bottom: none;
+    height: 58px;
+}
+
+.navbar-brand {
+  width: 155px;
+  height: 46px;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-image: url(https://www.expensya.com/Icons/logo%20expensya-white.svg);
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  margin-left: -40px;
+}
+
+.sidebar-inner {
+    padding: 25px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.sidebar-icon-left {
+    margin-right: 15px;
+    font-size: 25px;
+    color: #92a1a9;
+}
+
+.sidebar-icon-right {
+   font-size: 10px;
+   display: inline-block;
+}
+
+.sidebar-menu a {
+  border-radius: .25rem;
+  line-height: 2.4rem;
+  height: 2.4rem;
+  color: #395767;
+  font-weight: bold;
+}
+
+.sidebar-menu li {
+  padding: 5px;
+  border-radius: .25rem;
+}
+
+.sidebar-menu li.active a,
+.sidebar-menu li.active i{
+  color: #14262f;
+}
+
+
+.sidebar-menu li:hover {
+  color: #14262f;
+}
+
+.sidebar-menu li:hover i.sidebar-icon-right,
+.sidebar-menu li:hover i.sidebar-icon-left {
+  color: #14262f;
+}
+
+.sidebar-menu li:hover a {
+  text-decoration: none;
+  color: #14262f;
+}
+
+.sidebar-menu ul{
+    margin-left: 40px;
+}
+
+span.badge {
+    margin-left: 20px;
+}
+
+i.fa.fa-handshake-o.sidebar-icon-left {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+#integSubmenu span.badge {
+    margin-left: 114px;
+}
+
+i.ti-angle-down {
+    transition: transform 300ms;
+}
+
+li.sidebar-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2588C3 !important;
+    margin: 10px 0px 5px;
+}
+
+.progress-label {
+    display: flex;
+    font-size: 13px;
+}
+
+.label-right {
+    margin-left: auto;
+}
+
+.sub-menu {
+    margin-left: 10px;
+    border-left: solid 4px rgb(86,156,211);
+    transition: transform 300ms;
+}
