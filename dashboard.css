@@ -1,5 +1,5 @@
 body {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: 'Dosis', serif;
   background-color: #e7e7e7;
   color: #294661;
@@ -136,6 +136,17 @@ nav.navbar.navbar-default {
   color: #14262f;
 }
 
+.sidebar-menu li.active a.active,
+.sidebar-menu li.active i{
+  color: #2588C3 !important;
+}
+
+.sidebar-menu li.active a.dropdown-toggle.active,
+.sidebar-menu li.active i.dropdown-toggle.active{
+  color: #14262f !important;
+}
+dropdown-toggle
+
 
 .sidebar-menu li:hover {
   color: #14262f;
@@ -194,6 +205,15 @@ li.sidebar-header {
     transition: transform 300ms;
 }
 
+.sub-menu li {
+  padding: 0;
+}
+
+.sub-menu a {
+  font-weight: normal;
+}
+
 li.active li a.active {
     color: #2688c3;
+    font-weight: bold;
 }
