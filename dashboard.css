@@ -99,8 +99,13 @@ nav.navbar.navbar-default {
   margin-left: -40px;
 }
 
+.progress-wrapper {
+    width: 90%;
+}
+
+
 .sidebar-inner {
-    padding: 25px;
+    padding: 25px 10px 25px 25px;
 }
 
 .dropdown-toggle::after {
@@ -127,7 +132,7 @@ nav.navbar.navbar-default {
 }
 
 .sidebar-menu li {
-  padding: 5px;
+  padding: 5px 2px;
   border-radius: .25rem;
 }
 
@@ -167,7 +172,7 @@ dropdown-toggle
 }
 
 span.badge {
-    margin-left: 20px;
+    margin-left: 2px;
 }
 
 i.fa.fa-handshake-o.sidebar-icon-left {
