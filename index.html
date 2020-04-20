@@ -52,11 +52,26 @@
                                 </a>
                               </li>
 
-                                <li class="sidebar-header entreprise">
-                                  <a href="#">
-                                    Grant Thornton
+                              <!-- Menu Barème & véhicules -->
+                              <li class="sidebar-header entreprise">
+                                  <a href="#companySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                      <span class="submenu-title" style="display: inline-block;width: 185px;">Grant Thornton</span>
+                                      <i class="ti-angle-down sidebar-icon-right" aria-hidden="true"></i>
                                   </a>
-                                </li>
+                                  <div class="sub-menu">
+                                      <ul class="collapse list-unstyled" id="companySubmenu" data-parent="#accordion">
+                                          <li>
+                                              <a href="#">Fiche de l'entreprise</a>
+                                          </li>
+                                      </ul>
+                                      <ul class="collapse list-unstyled" id="companySubmenu" data-parent="#accordion">
+                                          <li>
+                                              <a href="#">Single sign-on (SSO)</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </li>
+                              
                                 <!-- Menu Note de Frais -->
                                 <li>
                                     <a href="#ndfSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">

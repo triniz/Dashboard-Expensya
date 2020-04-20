@@ -230,3 +230,13 @@ li.entreprise a:hover,
 li.sidebar-header.entreprise:hover a{
   color: #2688c3;
 }
+
+.entreprise .submenu-title {
+    margin-right: 43px;
+}
+
+.entreprise ul li a,
+.entreprise ul li a:hover {
+    text-transform: none;
+    color: #294661 !important;
+}
